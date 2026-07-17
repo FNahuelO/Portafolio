@@ -7,10 +7,10 @@
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <circle cx="980" cy="120" r="220" fill="#2dd4bf" opacity="0.12"/>
-  <rect x="80" y="175" width="112" height="112" rx="28" fill="#101827" stroke="#243044" stroke-width="3"/>
-  <path d="M104 255V205h32c10.3 0 17 5.8 17 14.7 0 6-3 10.5-7.9 12.8L160 255h-14.7l-7.2-19.6H118.4V255H104Zm14.4-32.2h15.1c4.2 0 6.8-2.3 6.8-5.8s-2.6-5.6-6.8-5.6h-15.1v11.4Z" fill="#2dd4bf"/>
-  <circle cx="164" cy="242" r="17.5" stroke="#2dd4bf" stroke-width="8" fill="none"/>
-  <text x="220" y="250" font-family="ui-sans-serif,system-ui,sans-serif" font-size="64" font-weight="700" fill="#e8edf5">Franco Osorio</text>
-  <text x="80" y="360" font-family="ui-monospace,monospace" font-size="28" fill="#2dd4bf">Full Stack Developer · Mobile Engineer</text>
-  <text x="80" y="420" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" fill="#9aa6b8">React Native · Expo · NestJS · TypeScript · Cloud</text>
+  <rect x="80" y="175" width="120" height="120" rx="28" fill="#101827" stroke="#243044" stroke-width="3"/>
+  <path fill="#2dd4bf" d="M102 200h38v11H115v15h21v11H115v26h-13V200Z"/>
+  <path fill="#2dd4bf" fill-rule="evenodd" d="M168 200c17.67 0 32 14.33 32 32s-14.33 32-32 32-32-14.33-32-32 14.33-32 32-32Zm0 11c-11.6 0-21 9.4-21 21s9.4 21 21 21 21-9.4 21-21-9.4-21-21-21Z"/>
+  <text x="230" y="255" font-family="ui-sans-serif,system-ui,sans-serif" font-size="64" font-weight="700" fill="#e8edf5">Franco Osorio</text>
+  <text x="80" y="370" font-family="ui-monospace,monospace" font-size="28" fill="#2dd4bf">Full Stack Developer · Mobile Engineer</text>
+  <text x="80" y="430" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" fill="#9aa6b8">React Native · Expo · NestJS · TypeScript · Cloud</text>
 </svg>

@@ -148,6 +148,6 @@ export const en: Dictionary = {
   },
   footer: {
     rights: "Franco Osorio",
-    note: "Bilingual portfolio · PWA",
+    rightsReserved: "All rights reserved",
   },
 };

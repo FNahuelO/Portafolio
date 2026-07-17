@@ -3,7 +3,9 @@ type Props = {
   title?: string;
 };
 
-/** Monograma FO — Franco Osorio */
+/**
+ * Logo legible FO — F y O lado a lado, misma altura, tipografía geométrica.
+ */
 export function LogoMark({ className, title = "Franco Osorio" }: Props) {
   return (
     <svg
@@ -15,29 +17,26 @@ export function LogoMark({ className, title = "Franco Osorio" }: Props) {
       aria-label={title}
     >
       <title>{title}</title>
-      <rect width="64" height="64" rx="16" className="fill-bg-elevated" />
+      <rect width="64" height="64" rx="14" className="fill-bg-elevated" />
       <rect
-        x="1.5"
-        y="1.5"
-        width="61"
-        height="61"
-        rx="14.5"
+        x="1.25"
+        y="1.25"
+        width="61.5"
+        height="61.5"
+        rx="12.75"
         className="stroke-line"
         strokeWidth="1.5"
       />
-      {/* F */}
+      {/* F — trazo grueso legible */}
       <path
-        d="M14 46V18h18.2c5.9 0 9.7 3.3 9.7 8.4 0 3.4-1.7 6-4.5 7.3L42 46h-8.4l-4.1-11.2H22.2V46H14Zm8.2-18.4h8.6c2.4 0 3.9-1.3 3.9-3.3s-1.5-3.2-3.9-3.2h-8.6v6.5Z"
         className="fill-accent"
+        d="M11 15h20v6H18v8h11v6H18v14H11V15Z"
       />
-      {/* O ring */}
-      <circle
-        cx="48"
-        cy="40"
-        r="10"
-        className="stroke-accent"
-        strokeWidth="4.5"
-        fill="none"
+      {/* O — anillo claro al mismo alto */}
+      <path
+        className="fill-accent"
+        fillRule="evenodd"
+        d="M46 15c9.39 0 17 7.61 17 17s-7.61 17-17 17-17-7.61-17-17 7.61-17 17-17Zm0 6c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11Z"
       />
     </svg>
   );

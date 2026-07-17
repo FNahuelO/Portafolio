@@ -79,7 +79,7 @@ export type Dictionary = {
   };
   footer: {
     rights: string;
-    note: string;
+    rightsReserved: string;
   };
 };
 
@@ -230,6 +230,6 @@ export const es: Dictionary = {
   },
   footer: {
     rights: "Franco Osorio",
-    note: "Portafolio bilingüe · PWA",
+    rightsReserved: "Todos los derechos reservados",
   },
 };
