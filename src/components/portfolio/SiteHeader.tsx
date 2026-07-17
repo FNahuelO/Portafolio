@@ -7,6 +7,7 @@ import type { Dictionary } from "@/content";
 import type { Locale } from "@/lib/i18n";
 import { ThemeToggle } from "./ThemeToggle";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { LogoMark } from "./Logo";
 
 type Props = {
   locale: Locale;
@@ -27,7 +28,6 @@ export function SiteHeader({ locale, dict }: Props) {
     { href: `#perfil`, label: dict.nav.profile },
     { href: `#stack`, label: dict.nav.stack },
     { href: `#experiencia`, label: dict.nav.experience },
-    { href: `#formacion`, label: dict.nav.education },
     { href: `#proyectos`, label: dict.nav.projects },
     { href: `#contacto`, label: dict.nav.contact },
   ];
@@ -37,9 +37,10 @@ export function SiteHeader({ locale, dict }: Props) {
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link
           href={`/${locale}`}
-          className="focus-ring font-display text-lg font-bold tracking-tight"
+          className="focus-ring inline-flex items-center gap-2.5 font-display text-lg font-bold tracking-tight"
         >
-          {dict.hero.brand}
+          <LogoMark className="size-8 shrink-0" title={dict.hero.brand} />
+          <span className="hidden sm:inline">{dict.hero.brand}</span>
         </Link>
 
         <nav

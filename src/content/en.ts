@@ -12,7 +12,6 @@ export const en: Dictionary = {
     profile: "Profile",
     stack: "Stack",
     experience: "Experience",
-    education: "Education",
     projects: "Projects",
     contact: "Contact",
     skip: "Skip to content",
@@ -39,7 +38,6 @@ export const en: Dictionary = {
     ctaRecruiter: "Recruiter profile",
     ctaClient: "Discuss a project",
     location: "Ezeiza, Buenos Aires",
-    scrollHint: "Scroll to explore",
   },
   profile: {
     eyebrow: "Profile",
@@ -123,22 +121,6 @@ export const en: Dictionary = {
           "Optimized performance and load times with minification, compression, and caching.",
           "Implemented responsive and adaptive design across devices and screen sizes.",
         ],
-      },
-    ],
-  },
-  education: {
-    eyebrow: "Education",
-    title: "Academic background",
-    items: [
-      {
-        org: "Henry",
-        role: "Full Stack Developer",
-        period: "2022",
-      },
-      {
-        org: "Instituto Luciano H. Valette",
-        role: "High school diploma",
-        period: "2015",
       },
     ],
   },

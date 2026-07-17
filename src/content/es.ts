@@ -10,7 +10,6 @@ export type Dictionary = {
     profile: string;
     stack: string;
     experience: string;
-    education: string;
     projects: string;
     contact: string;
     skip: string;
@@ -36,7 +35,6 @@ export type Dictionary = {
     ctaRecruiter: string;
     ctaClient: string;
     location: string;
-    scrollHint: string;
   };
   profile: {
     eyebrow: string;
@@ -57,15 +55,6 @@ export type Dictionary = {
       role: string;
       period: string;
       points: string[];
-    }[];
-  };
-  education: {
-    eyebrow: string;
-    title: string;
-    items: {
-      org: string;
-      role: string;
-      period: string;
     }[];
   };
   projects: {
@@ -105,7 +94,6 @@ export const es: Dictionary = {
     profile: "Perfil",
     stack: "Stack",
     experience: "Experiencia",
-    education: "Formación",
     projects: "Proyectos",
     contact: "Contacto",
     skip: "Saltar al contenido",
@@ -132,7 +120,6 @@ export const es: Dictionary = {
     ctaRecruiter: "Perfil para reclutadores",
     ctaClient: "Hablar de un proyecto",
     location: "Ezeiza, Buenos Aires",
-    scrollHint: "Desplazá para explorar",
   },
   profile: {
     eyebrow: "Perfil",
@@ -216,22 +203,6 @@ export const es: Dictionary = {
           "Optimización de rendimiento y carga con minificación, compresión y caché.",
           "Implementación de diseño responsive y adaptativo en múltiples dispositivos y resoluciones.",
         ],
-      },
-    ],
-  },
-  education: {
-    eyebrow: "Formación",
-    title: "Datos académicos",
-    items: [
-      {
-        org: "Henry",
-        role: "Full Stack Developer",
-        period: "2022",
-      },
-      {
-        org: "Instituto Luciano H. Valette",
-        role: "Bachillerato",
-        period: "2015",
       },
     ],
   },
