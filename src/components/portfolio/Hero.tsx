@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowDownRight, MapPin } from "@phosphor-icons/react";
 import type { Dictionary } from "@/content";
+import { LogoMark } from "./Logo";
 
 type Props = {
   dict: Dictionary;
@@ -19,7 +20,10 @@ export function Hero({ dict }: Props) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="eyebrow mb-4">{dict.hero.role}</p>
+          <div className="mb-5 flex flex-wrap items-center gap-3">
+            <LogoMark className="size-12 sm:size-14" title={dict.hero.brand} />
+            <p className="eyebrow !mb-0">{dict.hero.role}</p>
+          </div>
           <h1 className="display mb-5">{dict.hero.brand}</h1>
           <p className="lead mb-8">{dict.hero.summary}</p>
 
