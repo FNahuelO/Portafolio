@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, GithubLogo } from "@phosphor-icons/react";
+import { ArrowUpRight } from "@phosphor-icons/react";
 import type { Dictionary } from "@/content";
 import type { Locale } from "@/lib/i18n";
 import { BrowserFrame } from "./BrowserFrame";
@@ -78,8 +78,7 @@ export function Projects({ locale, dict }: Props) {
                   ) : (
                     <BrowserFrame
                       urlLabel={
-                        project.liveUrl?.replace(/^https?:\/\//, "") ??
-                        "github.com/FNahuelO"
+                        project.liveUrl?.replace(/^https?:\/\//, "") ?? title
                       }
                     >
                       {preview}
@@ -103,19 +102,8 @@ export function Projects({ locale, dict }: Props) {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-4 flex flex-wrap gap-3">
-                      {project.repoUrl ? (
-                        <a
-                          href={project.repoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="focus-ring inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
-                        >
-                          <GithubLogo size={16} weight="bold" aria-hidden />
-                          {dict.projects.code}
-                        </a>
-                      ) : null}
-                      {project.liveUrl ? (
+                    {project.liveUrl ? (
+                      <div className="mt-4">
                         <a
                           href={project.liveUrl}
                           target="_blank"
@@ -125,8 +113,8 @@ export function Projects({ locale, dict }: Props) {
                           {dict.projects.live}
                           <ArrowUpRight size={16} weight="bold" aria-hidden />
                         </a>
-                      ) : null}
-                    </div>
+                      </div>
+                    ) : null}
                   </div>
                 </article>
               </Reveal>
