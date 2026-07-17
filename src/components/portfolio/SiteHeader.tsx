@@ -27,6 +27,7 @@ export function SiteHeader({ locale, dict }: Props) {
     { href: `#perfil`, label: dict.nav.profile },
     { href: `#stack`, label: dict.nav.stack },
     { href: `#experiencia`, label: dict.nav.experience },
+    { href: `#formacion`, label: dict.nav.education },
     { href: `#proyectos`, label: dict.nav.projects },
     { href: `#contacto`, label: dict.nav.contact },
   ];

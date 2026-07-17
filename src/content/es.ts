@@ -10,6 +10,7 @@ export type Dictionary = {
     profile: string;
     stack: string;
     experience: string;
+    education: string;
     projects: string;
     contact: string;
     skip: string;
@@ -58,11 +59,19 @@ export type Dictionary = {
       points: string[];
     }[];
   };
+  education: {
+    eyebrow: string;
+    title: string;
+    items: {
+      org: string;
+      role: string;
+      period: string;
+    }[];
+  };
   projects: {
     eyebrow: string;
     title: string;
     subtitle: string;
-    code: string;
     live: string;
     items: Project[];
   };
@@ -96,6 +105,7 @@ export const es: Dictionary = {
     profile: "Perfil",
     stack: "Stack",
     experience: "Experiencia",
+    education: "Formación",
     projects: "Proyectos",
     contact: "Contacto",
     skip: "Saltar al contenido",
@@ -116,12 +126,12 @@ export const es: Dictionary = {
     brand: "Franco Osorio",
     role: "Full Stack Developer · Mobile Engineer",
     summary:
-      "Construyo productos web y mobile de extremo a extremo con React Native, Expo, NestJS, TypeScript y Cloud (AWS / GCP).",
+      "Construyo productos web y mobile de extremo a extremo con React Native, Expo, NestJS, TypeScript y Cloud (AWS / GCP). Abierto a roles Full Stack o Frontend remotos.",
     ctaPrimary: "Ver proyectos",
     ctaSecondary: "Contactar",
     ctaRecruiter: "Perfil para reclutadores",
     ctaClient: "Hablar de un proyecto",
-    location: "Argentina",
+    location: "Ezeiza, Buenos Aires",
     scrollHint: "Desplazá para explorar",
   },
   profile: {
@@ -129,14 +139,14 @@ export const es: Dictionary = {
     title: "Producto digital de punta a punta",
     body: [
       "Soy Full Stack Developer con foco en soluciones escalables para web y mobile. Trabajo con React, Next.js, React Native, Expo, NestJS y TypeScript.",
-      "He desarrollado módulos de autenticación, perfiles, publicaciones, postulaciones, chat en tiempo real con Socket.IO y notificaciones push con Firebase, además de configurar builds y publicación en App Store y Google Play.",
-      "También optimizo infraestructura cloud y costos operativos asociados a tiempo real, almacenamiento, dominios y APIs.",
+      "En Cobro Inmediato aporto al desarrollo full stack de soluciones fintech, alineando producto y tecnología, y mejorando rendimiento, infraestructura y documentación.",
+      "También desarrollé de forma freelance plataformas como Trabajo Ya (web & mobile) y CEPPA, cubriendo arquitectura, autenticación, realtime, cloud y publicación en stores.",
     ],
     highlights: [
+      { label: "Actualidad", value: "Full stack en Cobro Inmediato" },
       { label: "Web & Mobile", value: "Arquitectura full stack" },
       { label: "Realtime", value: "Socket.IO · Push" },
       { label: "Cloud", value: "AWS · GCP · Firebase" },
-      { label: "Mobile ops", value: "Expo · Stores" },
     ],
   },
   stack: {
@@ -145,69 +155,97 @@ export const es: Dictionary = {
     groups: [
       {
         title: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "HTML5", "CSS3", "JavaScript"],
-      },
-      {
-        title: "Mobile",
-        items: ["React Native", "Expo"],
+        items: [
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "React Native",
+          "Expo",
+        ],
       },
       {
         title: "Backend",
-        items: ["NestJS", "Node.js", "APIs REST", "JWT", "Socket.IO"],
+        items: ["Node.js", "Express.js", "NestJS", "REST APIs", "JWT", "Socket.IO"],
+      },
+      {
+        title: "Datos",
+        items: ["PostgreSQL", "SQL", "MongoDB", "Redis", "Sequelize"],
       },
       {
         title: "Cloud & DevOps",
-        items: ["AWS", "GCP", "Firebase", "DynamoDB", "S3"],
+        items: [
+          "AWS",
+          "GCP",
+          "Firebase",
+          "Docker",
+          "CI/CD",
+          "GitHub Actions",
+          "ArgoCD",
+          "Nginx",
+          "PM2",
+        ],
       },
     ],
   },
   experience: {
     eyebrow: "Experiencia",
-    title: "Trabajo verificado",
+    title: "Experiencia laboral",
     items: [
       {
-        org: "Plataforma laboral (Argentina)",
-        role: "Desarrollo integral web & mobile",
-        period: "Proyecto full stack",
+        org: "Cobro Inmediato",
+        role: "Desarrollador full stack",
+        period: "2023 — Actualidad",
         points: [
-          "Diseño e implementación de plataforma mobile y web orientada al mercado laboral argentino, incluyendo arquitectura, bases de datos y despliegue.",
-          "Módulos de autenticación segura, perfiles diferenciados, publicaciones, postulaciones, chat en tiempo real con Socket.IO y notificaciones push con Firebase.",
-          "Configuración del ecosistema mobile con Expo, builds, revisión de políticas y publicación en App Store y Google Play.",
-          "Optimización de infraestructura cloud y costos de servicios para tiempo real, almacenamiento, dominios y APIs.",
+          "Colaboración cercana con el equipo de producto para transformar requisitos de negocio en soluciones técnicas alineadas a objetivos comerciales y técnicos.",
+          "Análisis de rendimiento y escalabilidad, proponiendo mejoras de infraestructura para optimizar eficiencia y resiliencia de las aplicaciones.",
+          "Desarrollo y actualización de documentación técnica: diagramas de arquitectura, manuales de usuario y guías de desarrollo.",
+          "Enfoque de mejora continua: automatización de procesos, reducción de tiempos de entrega y mayor eficiencia del equipo de desarrollo.",
         ],
       },
       {
         org: "AID FOR AIDS Internacional",
-        role: "Frontend",
-        period: "Interfaces web",
+        role: "Desarrollador frontend",
+        period: "2022 — 2024",
         points: [
-          "Diseño e implementación de interfaces con HTML5, CSS3 y JavaScript.",
-          "Uso de React y Next.js para experiencias dinámicas de alta calidad.",
+          "Diseño e implementación de interfaces con HTML5, CSS3, JavaScript, React y Next.js.",
+          "Colaboración con diseñadores gráficos y UX/UI para convertir prototipos en soluciones interactivas.",
+          "Optimización de rendimiento y carga con minificación, compresión y caché.",
+          "Implementación de diseño responsive y adaptativo en múltiples dispositivos y resoluciones.",
         ],
       },
+    ],
+  },
+  education: {
+    eyebrow: "Formación",
+    title: "Datos académicos",
+    items: [
       {
-        org: "CEPPA",
-        role: "Full stack",
-        period: "Aplicación web",
-        points: [
-          "Aplicación web con React en frontend y Node en backend para el Centro de Psicoterapias con Psicodélicos de Argentina.",
-          "Estado con Redux Toolkit, formularios con Formik/Yup, autenticación JWT y almacenamiento con AWS SDK (DynamoDB / S3) y Cloudinary.",
-        ],
+        org: "Henry",
+        role: "Full Stack Developer",
+        period: "2022",
+      },
+      {
+        org: "Instituto Luciano H. Valette",
+        role: "Bachillerato",
+        period: "2015",
       },
     ],
   },
   projects: {
     eyebrow: "Proyectos",
     title: "Selección destacada",
-    subtitle: "Repos públicos y demos desplegadas desde GitHub.",
-    code: "Código",
+    subtitle: "Freelance y productos digitales con demos públicas.",
     live: "Demo",
     items: projects,
   },
   contact: {
     eyebrow: "Contacto",
     title: "Hablemos",
-    body: "Disponible para roles full stack / mobile y para proyectos de producto digital.",
+    body: "En búsqueda de oportunidades Full Stack (o Frontend) remotas. También disponible para proyectos de producto digital.",
     emailLabel: "Email",
     email: "frannahuelosorio@gmail.com",
     linkedinLabel: "LinkedIn",

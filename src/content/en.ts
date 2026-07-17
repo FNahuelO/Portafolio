@@ -1,7 +1,7 @@
 import { projects } from "./projects";
 import type { Dictionary } from "./es";
 
-export const en = {
+export const en: Dictionary = {
   meta: {
     title: "Franco Osorio · Full Stack Developer & Mobile Engineer",
     description:
@@ -12,6 +12,7 @@ export const en = {
     profile: "Profile",
     stack: "Stack",
     experience: "Experience",
+    education: "Education",
     projects: "Projects",
     contact: "Contact",
     skip: "Skip to content",
@@ -32,12 +33,12 @@ export const en = {
     brand: "Franco Osorio",
     role: "Full Stack Developer · Mobile Engineer",
     summary:
-      "I build end-to-end web and mobile products with React Native, Expo, NestJS, TypeScript, and Cloud (AWS / GCP).",
+      "I build end-to-end web and mobile products with React Native, Expo, NestJS, TypeScript, and Cloud (AWS / GCP). Open to remote Full Stack or Frontend roles.",
     ctaPrimary: "View projects",
     ctaSecondary: "Contact",
     ctaRecruiter: "Recruiter profile",
     ctaClient: "Discuss a project",
-    location: "Argentina",
+    location: "Ezeiza, Buenos Aires",
     scrollHint: "Scroll to explore",
   },
   profile: {
@@ -45,14 +46,14 @@ export const en = {
     title: "End-to-end digital product",
     body: [
       "I am a Full Stack Developer focused on scalable web and mobile solutions. I work with React, Next.js, React Native, Expo, NestJS, and TypeScript.",
-      "I have built authentication, profiles, listings, applications, real-time chat with Socket.IO, and Firebase push notifications, plus Expo builds and App Store / Google Play releases.",
-      "I also optimize cloud infrastructure and operating costs for realtime, storage, domains, and APIs.",
+      "At Cobro Inmediato I contribute as a full stack developer on fintech solutions, aligning product and technology while improving performance, infrastructure, and documentation.",
+      "I have also built freelance platforms such as Trabajo Ya (web & mobile) and CEPPA, covering architecture, authentication, realtime, cloud, and store releases.",
     ],
     highlights: [
+      { label: "Current", value: "Full stack at Cobro Inmediato" },
       { label: "Web & Mobile", value: "Full-stack architecture" },
       { label: "Realtime", value: "Socket.IO · Push" },
       { label: "Cloud", value: "AWS · GCP · Firebase" },
-      { label: "Mobile ops", value: "Expo · Stores" },
     ],
   },
   stack: {
@@ -61,69 +62,97 @@ export const en = {
     groups: [
       {
         title: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "HTML5", "CSS3", "JavaScript"],
-      },
-      {
-        title: "Mobile",
-        items: ["React Native", "Expo"],
+        items: [
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "React Native",
+          "Expo",
+        ],
       },
       {
         title: "Backend",
-        items: ["NestJS", "Node.js", "REST APIs", "JWT", "Socket.IO"],
+        items: ["Node.js", "Express.js", "NestJS", "REST APIs", "JWT", "Socket.IO"],
+      },
+      {
+        title: "Data",
+        items: ["PostgreSQL", "SQL", "MongoDB", "Redis", "Sequelize"],
       },
       {
         title: "Cloud & DevOps",
-        items: ["AWS", "GCP", "Firebase", "DynamoDB", "S3"],
+        items: [
+          "AWS",
+          "GCP",
+          "Firebase",
+          "Docker",
+          "CI/CD",
+          "GitHub Actions",
+          "ArgoCD",
+          "Nginx",
+          "PM2",
+        ],
       },
     ],
   },
   experience: {
     eyebrow: "Experience",
-    title: "Verified work",
+    title: "Work experience",
     items: [
       {
-        org: "Job platform (Argentina)",
-        role: "End-to-end web & mobile development",
-        period: "Full-stack project",
+        org: "Cobro Inmediato",
+        role: "Full stack developer",
+        period: "2023 — Present",
         points: [
-          "Designed and implemented a mobile and web platform for the Argentine job market, covering architecture, databases, and deployment.",
-          "Built secure authentication, differentiated profiles, listings, applications, real-time Socket.IO chat, and Firebase push notifications.",
-          "Configured the Expo mobile ecosystem, builds, policy review, and App Store / Google Play publishing.",
-          "Optimized cloud infrastructure and service costs for realtime, storage, domains, and APIs.",
+          "Close collaboration with the product team to turn business requirements into technical solutions aligned with commercial and technical goals.",
+          "Performance and scalability analysis, proposing infrastructure improvements to increase efficiency and application resilience.",
+          "Creation and updates of technical documentation: architecture diagrams, user manuals, and development guides.",
+          "Continuous improvement mindset: process automation, shorter delivery cycles, and higher team efficiency.",
         ],
       },
       {
         org: "AID FOR AIDS Internacional",
-        role: "Frontend",
-        period: "Web interfaces",
+        role: "Frontend developer",
+        period: "2022 — 2024",
         points: [
-          "Designed and implemented interfaces with HTML5, CSS3, and JavaScript.",
-          "Used React and Next.js to deliver high-quality dynamic experiences.",
+          "Designed and implemented interfaces with HTML5, CSS3, JavaScript, React, and Next.js.",
+          "Worked with graphic and UX/UI designers to turn prototypes into interactive solutions.",
+          "Optimized performance and load times with minification, compression, and caching.",
+          "Implemented responsive and adaptive design across devices and screen sizes.",
         ],
       },
+    ],
+  },
+  education: {
+    eyebrow: "Education",
+    title: "Academic background",
+    items: [
       {
-        org: "CEPPA",
-        role: "Full stack",
-        period: "Web application",
-        points: [
-          "Web application with React frontend and Node backend for Argentina’s Centro de Psicoterapias con Psicodélicos.",
-          "State with Redux Toolkit, Formik/Yup forms, JWT authentication, and AWS SDK storage (DynamoDB / S3) plus Cloudinary.",
-        ],
+        org: "Henry",
+        role: "Full Stack Developer",
+        period: "2022",
+      },
+      {
+        org: "Instituto Luciano H. Valette",
+        role: "High school diploma",
+        period: "2015",
       },
     ],
   },
   projects: {
     eyebrow: "Projects",
     title: "Featured selection",
-    subtitle: "Public repositories and live demos from GitHub.",
-    code: "Code",
+    subtitle: "Freelance work and digital products with public demos.",
     live: "Live",
     items: projects,
   },
   contact: {
     eyebrow: "Contact",
     title: "Let’s talk",
-    body: "Open to full stack / mobile roles and digital product engagements.",
+    body: "Looking for remote Full Stack (or Frontend) opportunities. Also available for digital product engagements.",
     emailLabel: "Email",
     email: "frannahuelosorio@gmail.com",
     linkedinLabel: "LinkedIn",
@@ -139,4 +168,4 @@ export const en = {
     rights: "Franco Osorio",
     note: "Bilingual portfolio · PWA",
   },
-} as Dictionary;
+};

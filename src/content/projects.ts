@@ -4,43 +4,49 @@ export type Project = {
   id: string;
   frame: ProjectFrame;
   stack: string[];
-  repoUrl?: string;
   liveUrl?: string;
-  image?: string;
   title: { es: string; en: string };
   description: { es: string; en: string };
   category: { es: string; en: string };
 };
 
 /**
- * Proyectos verificados desde repos públicos de GitHub (FNahuelO)
- * y despliegues públicos asociados. Sin métricas inventadas.
+ * Proyectos destacados según CV y demos públicas.
+ * Sin enlaces a repositorios de código.
  */
 export const projects: Project[] = [
   {
     id: "trabajoya",
     frame: "phone",
-    stack: ["React Native", "Expo", "NestJS", "TypeScript", "Socket.IO", "Firebase"],
-    repoUrl: "https://github.com/FNahuelO/trabajoya-backend",
+    stack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "AWS",
+      "GCP",
+      "Firebase",
+      "Socket.IO",
+    ],
     liveUrl: "https://backoffice-murex.vercel.app",
     title: {
-      es: "TrabajoYa",
-      en: "TrabajoYa",
+      es: "Trabajo Ya",
+      en: "Trabajo Ya",
     },
     description: {
-      es: "Plataforma web y mobile para el mercado laboral argentino: autenticación, perfiles, publicaciones, postulaciones, chat en tiempo real con Socket.IO y notificaciones push con Firebase. Ecosistema mobile con Expo y publicación en App Store y Google Play.",
-      en: "Web and mobile platform for the Argentine job market: authentication, profiles, listings, applications, real-time chat with Socket.IO, and Firebase push notifications. Mobile stack with Expo and App Store / Google Play releases.",
+      es: "Aplicación mobile y web freelance para el mercado laboral argentino, orientada a conectar empresas con postulantes. Desarrollo integral: arquitectura, base de datos, backend, frontend, integraciones, despliegues y cloud. Módulos de autenticación, perfiles, publicaciones, postulaciones, chat en tiempo real, notificaciones push y planes pagos para empresas, con publicación en App Store y Google Play.",
+      en: "Freelance mobile and web app for the Argentine job market, connecting companies with applicants. End-to-end delivery: architecture, database, backend, frontend, integrations, deployments, and cloud. Modules for authentication, profiles, listings, applications, real-time chat, push notifications, and paid plans for companies, with App Store and Google Play releases.",
     },
     category: {
-      es: "Full stack · Web & Mobile",
-      en: "Full stack · Web & Mobile",
+      es: "Freelance · Web & Mobile",
+      en: "Freelance · Web & Mobile",
     },
   },
   {
     id: "coty",
     frame: "browser",
     stack: ["TypeScript", "React", "PWA"],
-    repoUrl: "https://github.com/FNahuelO/sistema-gestion-coty",
     liveUrl: "https://cotycafe.com",
     title: {
       es: "Coty Café · Sistema de gestión",
@@ -56,10 +62,36 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "ceppa",
+    frame: "browser",
+    stack: [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "MongoDB",
+      "Material UI",
+      "Redux Toolkit",
+      "AWS",
+      "JWT",
+    ],
+    liveUrl: "https://ceppa-api.vercel.app",
+    title: {
+      es: "CEPPA",
+      en: "CEPPA",
+    },
+    description: {
+      es: "Aplicación web freelance para el Centro de Psicoterapias con Psicodélicos de Argentina. Frontend en React y backend en Node, con Redux Toolkit, Formik/Yup, autenticación JWT e integración AWS (DynamoDB / S3) y Cloudinary.",
+      en: "Freelance web application for Argentina’s Centro de Psicoterapias con Psicodélicos. React frontend and Node backend with Redux Toolkit, Formik/Yup, JWT authentication, plus AWS (DynamoDB / S3) and Cloudinary integrations.",
+    },
+    category: {
+      es: "Freelance · Full stack",
+      en: "Freelance · Full stack",
+    },
+  },
+  {
     id: "fyp",
     frame: "browser",
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
-    repoUrl: "https://github.com/FNahuelO/fyp_desing",
     liveUrl: "https://fyp-desing.vercel.app",
     title: {
       es: "F&P Design Studio",
@@ -72,63 +104,6 @@ export const projects: Project[] = [
     category: {
       es: "Diseño · Portfolio",
       en: "Design · Portfolio",
-    },
-  },
-  {
-    id: "ceppa",
-    frame: "browser",
-    stack: ["React", "Node.js", "Redux Toolkit", "AWS", "JWT"],
-    repoUrl: "https://github.com/FNahuelO/ceppa-api",
-    liveUrl: "https://ceppa-api.vercel.app",
-    title: {
-      es: "CEPPA",
-      en: "CEPPA",
-    },
-    description: {
-      es: "Aplicación web para el Centro de Psicoterapias con Psicodélicos de Argentina. Frontend en React y backend en Node, con autenticación JWT e integración AWS (DynamoDB / S3) y Cloudinary.",
-      en: "Web application for Argentina’s Centro de Psicoterapias con Psicodélicos. React frontend and Node backend with JWT auth plus AWS (DynamoDB / S3) and Cloudinary integrations.",
-    },
-    category: {
-      es: "Full stack · Salud",
-      en: "Full stack · Health",
-    },
-  },
-  {
-    id: "padelpro",
-    frame: "browser",
-    stack: ["TypeScript", "NestJS"],
-    repoUrl: "https://github.com/FNahuelO/padelpro-backend",
-    liveUrl: "https://padelpro-backend.vercel.app",
-    title: {
-      es: "PadelPro Backend",
-      en: "PadelPro Backend",
-    },
-    description: {
-      es: "API backend en TypeScript para la plataforma PadelPro.",
-      en: "TypeScript backend API for the PadelPro platform.",
-    },
-    category: {
-      es: "Backend · API",
-      en: "Backend · API",
-    },
-  },
-  {
-    id: "box-app",
-    frame: "phone",
-    stack: ["TypeScript", "React"],
-    repoUrl: "https://github.com/FNahuelO/box-app",
-    liveUrl: "https://box-app-nine.vercel.app",
-    title: {
-      es: "Box App",
-      en: "Box App",
-    },
-    description: {
-      es: "Aplicación web en TypeScript desplegada en Vercel.",
-      en: "TypeScript web application deployed on Vercel.",
-    },
-    category: {
-      es: "Frontend",
-      en: "Frontend",
     },
   },
 ];
